@@ -154,7 +154,8 @@
         }
       });
       next =
-        imagesCollection[index] ||
+      //Bug le index n'était pas décrémenter
+        imagesCollection[index - 1] ||
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -192,7 +193,8 @@
           index = i;
         }
       });
-      next = imagesCollection[index] || imagesCollection[0];
+      //Bug le index n'était pas incrémenter
+      next = imagesCollection[index + 1] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     createLightBox(gallery, lightboxId, navigation) {
@@ -240,7 +242,8 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      //BUG ajoute la class "active" qui manquait qui permet d'afficher le CSS qui colori le background
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 
