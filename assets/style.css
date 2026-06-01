@@ -101,12 +101,15 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: #000;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
 	color: #000
+}
+.nav-link{
+	cursor: pointer;
 }
 .item-column {
 	position: relative;
@@ -354,3 +357,21 @@ input[type="submit"] {
 	}
 }
 
+.photo-profil{
+  width: 400px !important;
+  height: auto;
+}
+.photo-camera{
+  width: 399px !important;
+  height: auto;
+}
+
+.icone-Instagram{
+width: 20px !important;
+height: auto;
+}
+.carousel-item img{
+/*width="1440" height="666"*/
+width: 1440px !important;
+  height: auto;
+}
