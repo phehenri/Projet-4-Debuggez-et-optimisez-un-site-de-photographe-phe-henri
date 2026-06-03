@@ -155,8 +155,7 @@
       });
       next =
       //Bug le index n'était pas décrémenter
-        imagesCollection[index - 1] ||
-        imagesCollection[imagesCollection.length - 1];
+        imagesCollection[index - 1] || imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     nextImage() {

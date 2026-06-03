@@ -390,3 +390,8 @@ width: 1440px !important;
 .contact-info{
 	margin-top: 30px !important;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+	opacity: 1 !important;
+}
