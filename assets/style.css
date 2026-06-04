@@ -365,6 +365,7 @@ input[type="submit"] {
 	}
 }
 
+/*
 .photo-profil{
   width: 400px !important;
   height: auto;
@@ -379,10 +380,9 @@ width: 20px !important;
 height: auto;
 }
 .carousel-item img{
-/*width="1440" height="666"*/
 width: 1440px !important;
   height: auto;
-}
+}*/
 
 .tarifs{
 	font-size: 1.5rem;
